@@ -262,4 +262,118 @@ export const blogPosts: BlogPost[] = [
       },
     ],
   },
+  {
+    slug: "portion-control",
+    title: "Portion Control",
+    subtitle: "(Portion) Size Matters!",
+    category: "Meal Planning",
+    readTime: "6 min read",
+    sections: [
+      {
+        type: "paragraph",
+        content:
+          "All sizes are beautiful, but not when it comes to Portion Sizes. The smaller the portion size and the more frequent the meals throughout the day, the more effective it is for controlling hunger, maintaining energy levels, and supporting weight loss. This method of eating will be a massive shift from the usual eating habits, but that is where a clinical dietitian can jump in and make this transition easier.",
+      },
+      {
+        type: "paragraph",
+        content:
+          "In this blog, you will be introduced to practical tips for eating small portions. Let's dive straight into it.",
+      },
+      {
+        type: "heading",
+        content: "Plan Your Meals and Snacks",
+      },
+      {
+        type: "paragraph",
+        content:
+          "First and foremost, you must plan your meals and snacks in order to avoid the urge to snack on unhealthy foods. A meal plan needs to be put in place that includes small portions of nutritious foods in intervals of 3-4 hours, as this ensures you receive the right balance of nutrients to rejuvenate your days.",
+      },
+      {
+        type: "heading",
+        content: "Choose Nutrient-Dense Foods",
+      },
+      {
+        type: "paragraph",
+        content:
+          "The choice of Nutrient-Dense Foods keeps your stomach full and satisfied longer, besides providing essential nutrients to your body. If you are unsure which foods are considered nutrient-dense foods, then let's clear this out. You can opt for whole grains, lean proteins, healthy fats, and fiber-rich fruits and vegetables.",
+      },
+      {
+        type: "heading",
+        content: "Use Smaller Plates and Containers",
+      },
+      {
+        type: "paragraph",
+        content:
+          "It is imperative to psychologically manipulate your brain by using smaller plates and containers to help control portion sizes. This makes the meals appear larger and prevents overeating. Working hard becomes easier when you also work smart!",
+      },
+      {
+        type: "heading",
+        content: "Listen to Your Body's Hunger Cues",
+      },
+      {
+        type: "paragraph",
+        content:
+          "How often do you truly listen to your body's hunger cues? If you do not already, 'now' is a good time! Eat only when you are hungry and stop before you feel overly full. You should start practising mindful eating, as it helps regulate food intake and prevents unnecessary snacking.",
+      },
+      {
+        type: "heading",
+        content: "Drink Plenty of Water",
+      },
+      {
+        type: "paragraph",
+        content:
+          "There is nothing quite like Water! Therefore, you are advised to drink plenty of water. Staying hydrated helps control hunger and prevents mistaking thirst for hunger. A simple process of elimination can help you decide your next course of action. This makes catering to your needs relatively more convenient. Besides this, drinking water before meals can reduce the amount of food consumed.",
+      },
+      {
+        type: "heading",
+        content: "Avoid Processed and Sugary Foods",
+      },
+      {
+        type: "paragraph",
+        content:
+          "Perhaps the most basic and important tip, avoid processed and sugary foods. These foods can cause blood sugar spikes and crashes, which can lead to hunger and cravings. Always go for natural, whole foods to keep the stress at bay.",
+      },
+      {
+        type: "heading",
+        content: "Include Protein in Every Meal",
+      },
+      {
+        type: "paragraph",
+        content:
+          "A pro-tip is to include protein in every meal. If you wish to flex your muscles, what better than protein to help you out in this endeavour. Not only does it maintain your muscle mass, but it also helps you to feel full for longer. There are many protein-rich foods to choose from, such as lean meats, eggs, yogurt, nuts or plant-based protein.",
+      },
+      {
+        type: "heading",
+        content: "Eat Slowly and Enjoy Your Food",
+      },
+      {
+        type: "paragraph",
+        content:
+          "We all have heard that chewing 32 times helps with better digestion, even if it's slow! It is actually recommended to eat slowly and to enjoy your food, because eating slowly allows your brain to recognize when you are full and therefore, reduces the risk of overeating.",
+      },
+      {
+        type: "heading",
+        content: "Prepare Healthy Snacks in Advance",
+      },
+      {
+        type: "paragraph",
+        content:
+          "Better planning is the key to a better life. Always try to prepare your healthy snacks in advance because having pre-portioned healthy snacks such as the likes of nuts, fruits, yogurt, or whole-grain crackers assists you to stick to your meal plans, without succumbing to unhealthy distractions.",
+      },
+      {
+        type: "heading",
+        content: "Stay Consistent",
+      },
+      {
+        type: "paragraph",
+        content:
+          "Stay consistent! Avoid deviating from your eating schedules alongside gradually, adjusting portion sizes and frequency of meals to suit your needs.",
+      },
+      {
+        type: "paragraph",
+        content:
+          "Limiting food does not mean staying hungry, so do not confuse the two. Controlling portion sizes and increasing the frequency of meals is taking your future in your own hands and improving it tenfold. It is the journey towards the ultimate destination, Good Health!",
+      },
+    ],
+  },
 ];
