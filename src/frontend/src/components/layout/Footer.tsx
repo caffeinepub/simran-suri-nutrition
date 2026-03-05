@@ -5,6 +5,7 @@ const navLinks = [
   { label: "Home", to: "/" },
   { label: "About", to: "/about" },
   { label: "Services", to: "/services" },
+  { label: "Testimonials", to: "/testimonials" },
   { label: "Resources", to: "/resources" },
   { label: "Contact", to: "/contact" },
 ];
@@ -28,7 +29,7 @@ const socialLinks = [
   {
     icon: MessageCircle,
     label: "WhatsApp",
-    href: "https://wa.me/",
+    href: "https://wa.me/919311050022",
   },
 ];
 
@@ -51,6 +52,9 @@ export function Footer() {
             </h3>
             <p className="text-xs font-body tracking-wide uppercase text-background/60 font-medium">
               Clinical Dietitian & Nutrition Consultant
+            </p>
+            <p className="text-sm font-body italic text-background/50">
+              Enjoy the taste of eating right.
             </p>
             {/* Social icons */}
             <div className="flex gap-3 pt-2">
@@ -122,13 +126,13 @@ export function Footer() {
                 <span>LinkedIn Profile</span>
               </a>
               <a
-                href="https://wa.me/"
+                href="https://wa.me/919311050022"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center gap-2.5 text-sm font-body text-background/70 hover:text-background transition-colors w-fit"
               >
                 <MessageCircle size={14} className="shrink-0" />
-                <span>WhatsApp</span>
+                <span>+91 93110 50022</span>
               </a>
             </div>
           </div>
@@ -142,15 +146,7 @@ export function Footer() {
               purposes and does not replace professional medical advice.
             </p>
             <p className="text-xs font-body text-background/30 shrink-0">
-              © {currentYear}. Built with love using{" "}
-              <a
-                href={`https://caffeine.ai?utm_source=caffeine-footer&utm_medium=referral&utm_content=${encodeURIComponent(typeof window !== "undefined" ? window.location.hostname : "")}`}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="hover:text-background/50 transition-colors underline underline-offset-2"
-              >
-                caffeine.ai
-              </a>
+              © {currentYear} Simran Suri Nutrition. All rights reserved.
             </p>
           </div>
         </div>
