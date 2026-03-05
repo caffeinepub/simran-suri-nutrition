@@ -1,0 +1,137 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ── Font Faces ──────────────────────────────────────────────────────────── */
+
+/* Playfair Display — serif display font for headings */
+@font-face {
+  font-family: "Playfair Display";
+  src: url("/assets/fonts/PlayfairDisplay-Variable.woff2") format("woff2");
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Plus Jakarta Sans — clean humanist sans for body */
+@font-face {
+  font-family: "Plus Jakarta Sans";
+  src: url("/assets/fonts/PlusJakartaSans-Variable.woff2") format("woff2");
+  font-weight: 200 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* ── Design Tokens (OKLCH) ───────────────────────────────────────────────── */
+
+@layer base {
+  :root {
+    --radius: 0.75rem;
+
+    /* Core palette — sage green nutrition brand */
+    /* Background: warm cream/off-white */
+    --background: 0.97 0.008 85;
+    --foreground: 0.22 0.018 120;
+
+    /* Card: clean white with warmth */
+    --card: 0.99 0.003 90;
+    --card-foreground: 0.22 0.018 120;
+
+    /* Popover */
+    --popover: 0.99 0.003 90;
+    --popover-foreground: 0.22 0.018 120;
+
+    /* Primary: sage green */
+    --primary: 0.48 0.085 145;
+    --primary-foreground: 0.99 0 0;
+
+    /* Secondary: warm beige */
+    --secondary: 0.94 0.018 75;
+    --secondary-foreground: 0.30 0.025 120;
+
+    /* Muted: soft cream */
+    --muted: 0.955 0.012 85;
+    --muted-foreground: 0.50 0.018 120;
+
+    /* Accent: muted olive */
+    --accent: 0.88 0.04 130;
+    --accent-foreground: 0.25 0.03 130;
+
+    /* Destructive */
+    --destructive: 0.577 0.245 27.325;
+    --destructive-foreground: 0.985 0 0;
+
+    /* Borders */
+    --border: 0.88 0.015 90;
+    --input: 0.88 0.015 90;
+    --ring: 0.48 0.085 145;
+
+    /* Semantic extras */
+    --sage: 0.48 0.085 145;
+    --sage-light: 0.88 0.04 130;
+    --sage-dark: 0.32 0.07 145;
+    --cream: 0.965 0.018 78;
+    --cream-dark: 0.93 0.028 72;
+    --olive: 0.42 0.065 130;
+    --warm-brown: 0.38 0.045 55;
+
+    /* Charts */
+    --chart-1: 0.48 0.085 145;
+    --chart-2: 0.60 0.065 130;
+    --chart-3: 0.42 0.065 130;
+    --chart-4: 0.828 0.189 84.429;
+    --chart-5: 0.769 0.188 70.08;
+
+    /* Sidebar */
+    --sidebar: 0.975 0.005 90;
+    --sidebar-foreground: 0.22 0.018 120;
+    --sidebar-primary: 0.48 0.085 145;
+    --sidebar-primary-foreground: 0.99 0 0;
+    --sidebar-accent: 0.94 0.018 75;
+    --sidebar-accent-foreground: 0.30 0.025 120;
+    --sidebar-border: 0.88 0.015 90;
+    --sidebar-ring: 0.48 0.085 145;
+  }
+
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-body antialiased;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-display;
+  }
+}
+
+/* ── Utility classes ─────────────────────────────────────────────────────── */
+
+@layer utilities {
+  .bg-sage { background-color: oklch(var(--sage)); }
+  .bg-sage-light { background-color: oklch(var(--sage-light)); }
+  .bg-sage-dark { background-color: oklch(var(--sage-dark)); }
+  .bg-cream { background-color: oklch(var(--cream)); }
+  .bg-cream-dark { background-color: oklch(var(--cream-dark)); }
+  .bg-warm-brown { background-color: oklch(var(--warm-brown)); }
+  .text-sage { color: oklch(var(--sage)); }
+  .text-sage-dark { color: oklch(var(--sage-dark)); }
+  .text-olive { color: oklch(var(--olive)); }
+  .text-warm-brown { color: oklch(var(--warm-brown)); }
+  .border-sage { border-color: oklch(var(--sage)); }
+  .border-sage-light { border-color: oklch(var(--sage-light)); }
+  .border-warm-brown { border-color: oklch(var(--warm-brown)); }
+
+  .section-padding {
+    @apply px-6 py-14 md:py-16 md:px-12 lg:px-16 xl:px-24;
+  }
+
+  .container-narrow {
+    @apply max-w-5xl mx-auto;
+  }
+
+  .container-wide {
+    @apply max-w-7xl mx-auto;
+  }
+}
