@@ -36,7 +36,7 @@ export function Header() {
       className={cn(
         "fixed top-0 left-0 right-0 z-50 bg-background/95 backdrop-blur-sm transition-all duration-300",
         scrolled
-          ? "shadow-sm border-b border-sage/20"
+          ? "shadow-sm border-b border-sage/30"
           : "border-b border-border/40",
       )}
     >
@@ -76,8 +76,8 @@ export function Header() {
                 className={cn(
                   "px-4 py-2 text-sm font-body font-medium rounded-md transition-colors duration-200",
                   currentPath === link.to
-                    ? "text-sage bg-sage-light/50"
-                    : "text-foreground/70 hover:text-foreground hover:bg-muted",
+                    ? "text-sage bg-sage/12"
+                    : "text-foreground/70 hover:text-sage hover:bg-muted",
                 )}
               >
                 {link.label}
@@ -86,7 +86,7 @@ export function Header() {
             <Link to="/contact">
               <Button
                 size="sm"
-                className="ml-2 bg-primary text-primary-foreground hover:opacity-90 font-body font-medium"
+                className="ml-2 bg-primary text-primary-foreground hover:bg-primary-dark transition-colors font-body font-medium"
               >
                 Book a Consultation
               </Button>
@@ -130,7 +130,7 @@ export function Header() {
             ))}
             <div className="pt-4 pb-2">
               <Link to="/contact">
-                <Button className="w-full bg-primary text-primary-foreground hover:opacity-90 font-body">
+                <Button className="w-full bg-primary text-primary-foreground hover:bg-primary-dark transition-colors font-body">
                   Book a Consultation
                 </Button>
               </Link>

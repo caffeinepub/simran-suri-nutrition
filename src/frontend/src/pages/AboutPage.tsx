@@ -92,7 +92,10 @@ export function AboutPage() {
       {/* ── Philosophy ────────────────────────────────────────────────── */}
       <section
         className="section-padding"
-        style={{ background: "oklch(0.955 0.022 135)" }}
+        style={{
+          background:
+            "linear-gradient(135deg, oklch(0.965 0.025 133) 0%, oklch(0.955 0.030 130) 100%)",
+        }}
       >
         <div className="container-narrow">
           <motion.div
@@ -102,15 +105,18 @@ export function AboutPage() {
             variants={stagger}
             className="space-y-6"
           >
-            <motion.h2
-              variants={fadeUp}
-              className="font-display text-4xl md:text-5xl font-bold text-foreground"
-            >
-              Philosophy
-            </motion.h2>
+            <div className="flex items-start gap-3">
+              <div className="w-1 h-8 bg-sage rounded-full mt-2 shrink-0" />
+              <motion.h2
+                variants={fadeUp}
+                className="font-display text-4xl md:text-5xl font-bold text-foreground"
+              >
+                Philosophy
+              </motion.h2>
+            </div>
             <motion.div
               variants={fadeUp}
-              className="space-y-4 font-body text-base text-muted-foreground leading-relaxed max-w-2xl border-l-4 border-l-sage/50 pl-6"
+              className="space-y-4 font-body text-base text-muted-foreground leading-relaxed max-w-2xl border-l-4 border-l-sage pl-6 bg-sage/5 rounded-r-xl py-4"
             >
               <p>
                 Nutrition guidance should never feel restrictive or
@@ -129,7 +135,13 @@ export function AboutPage() {
       </section>
 
       {/* ── Areas of Focus ────────────────────────────────────────────── */}
-      <section className="bg-background section-padding">
+      <section
+        className="section-padding"
+        style={{
+          background:
+            "linear-gradient(180deg, oklch(0.99 0.003 90) 0%, oklch(0.975 0.015 130) 100%)",
+        }}
+      >
         <div className="container-narrow">
           <motion.div
             initial="hidden"
@@ -138,19 +150,22 @@ export function AboutPage() {
             variants={stagger}
             className="space-y-8"
           >
-            <motion.h2
-              variants={fadeUp}
-              className="font-display text-4xl md:text-5xl font-bold text-foreground"
-            >
-              Areas of Focus
-            </motion.h2>
+            <div className="flex items-start gap-3">
+              <div className="w-1 h-8 bg-sage rounded-full mt-2 shrink-0" />
+              <motion.h2
+                variants={fadeUp}
+                className="font-display text-4xl md:text-5xl font-bold text-foreground"
+              >
+                Areas of Focus
+              </motion.h2>
+            </div>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
               {focusAreas.map((area) => (
                 <motion.div
                   key={area}
                   variants={fadeUp}
-                  className="flex items-center gap-3 p-4 rounded-xl border border-border bg-card hover:border-sage/40 transition-colors"
+                  className="flex items-center gap-3 p-4 rounded-xl border border-sage/25 bg-card hover:border-sage/50 transition-colors"
                 >
                   <CheckCircle2 size={18} className="text-sage shrink-0" />
                   <span className="font-body text-sm font-medium text-foreground/80">

@@ -96,7 +96,7 @@ export function TestimonialsPage() {
                 key={i}
                 variants={fadeUp}
                 data-ocid={`testimonials.card.${i + 1}`}
-                className="bg-card rounded-2xl p-8 border border-border space-y-4 flex flex-col hover:border-sage/40 hover:shadow-md transition-all duration-300"
+                className="bg-card rounded-2xl p-8 border border-sage/25 space-y-4 flex flex-col hover:border-sage/50 hover:shadow-md transition-all duration-300"
               >
                 <Quote
                   size={32}

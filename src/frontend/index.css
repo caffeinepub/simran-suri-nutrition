@@ -62,14 +62,17 @@
     --destructive-foreground: 0.985 0 0;
 
     /* Borders */
-    --border: 0.88 0.015 90;
-    --input: 0.88 0.015 90;
+    --border: 0.90 0.018 115;
+    --input: 0.90 0.018 115;
     --ring: 0.48 0.085 145;
 
     /* Semantic extras */
-    --sage: 0.48 0.085 145;
+    --sage: 0.50 0.095 145;
     --sage-light: 0.88 0.04 130;
     --sage-dark: 0.32 0.07 145;
+    --primary-dark: 0.35 0.09 148;
+    --forest: 0.32 0.085 148;
+    --sage-muted: 0.96 0.022 133;
     --cream: 0.965 0.018 78;
     --cream-dark: 0.93 0.028 72;
     --olive: 0.42 0.065 130;
@@ -122,6 +125,12 @@
   .border-sage { border-color: oklch(var(--sage)); }
   .border-sage-light { border-color: oklch(var(--sage-light)); }
   .border-warm-brown { border-color: oklch(var(--warm-brown)); }
+
+  .bg-sage-muted { background-color: oklch(var(--sage-muted)); }
+  .bg-forest { background-color: oklch(var(--forest)); }
+  .text-forest { color: oklch(var(--forest)); }
+  .border-forest { border-color: oklch(var(--forest)); }
+  .bg-primary-dark { background-color: oklch(var(--primary-dark)); }
 
   .section-padding {
     @apply px-6 py-14 md:py-16 md:px-12 lg:px-16 xl:px-24;

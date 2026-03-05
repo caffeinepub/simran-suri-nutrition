@@ -85,7 +85,13 @@ export function HomePage() {
   return (
     <main>
       {/* ── Hero ──────────────────────────────────────────────────────── */}
-      <section className="pt-[72px] min-h-[80vh] flex items-center bg-background">
+      <section
+        className="pt-[72px] min-h-[80vh] flex items-center"
+        style={{
+          background:
+            "linear-gradient(135deg, oklch(0.98 0.005 85) 0%, oklch(0.96 0.018 130) 100%)",
+        }}
+      >
         <div className="container-wide section-padding w-full">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-14 lg:gap-16 items-center">
             {/* Left */}
@@ -129,7 +135,7 @@ export function HomePage() {
                 <Link to="/contact">
                   <Button
                     size="lg"
-                    className="bg-primary text-primary-foreground hover:opacity-90 font-body font-medium px-7 shadow-sage"
+                    className="bg-primary text-primary-foreground hover:bg-primary-dark transition-colors font-body font-medium px-7 shadow-sage"
                     data-ocid="hero.primary_button"
                   >
                     Book a Consultation
@@ -182,7 +188,10 @@ export function HomePage() {
       {/* ── Areas I Support ───────────────────────────────────────────── */}
       <section
         className="section-padding"
-        style={{ background: "oklch(0.96 0.025 135)" }}
+        style={{
+          background:
+            "linear-gradient(160deg, oklch(0.975 0.012 95) 0%, oklch(0.955 0.028 133) 100%)",
+        }}
       >
         <div className="container-wide">
           <motion.div
@@ -193,9 +202,12 @@ export function HomePage() {
             className="space-y-12"
           >
             <motion.div variants={fadeUp} className="max-w-2xl space-y-4">
-              <h2 className="font-display text-4xl md:text-5xl font-bold text-foreground leading-tight">
-                Nutrition support for real life
-              </h2>
+              <div className="flex items-start gap-3">
+                <div className="w-1 h-8 bg-sage rounded-full mt-2 shrink-0" />
+                <h2 className="font-display text-4xl md:text-5xl font-bold text-foreground leading-tight">
+                  Nutrition support for real life
+                </h2>
+              </div>
               <p className="font-body text-lg text-muted-foreground leading-relaxed">
                 Nutrition isn't one-size-fits-all. My approach focuses on
                 helping individuals build sustainable habits that support
@@ -209,9 +221,9 @@ export function HomePage() {
                   key={area.title}
                   variants={fadeUp}
                   data-ocid={`areas.card.${i + 1}`}
-                  className="bg-background rounded-2xl p-6 border-l-4 border-l-sage/60 border border-border hover:border-sage/40 hover:shadow-md transition-all duration-300 group pl-5"
+                  className="bg-background rounded-2xl p-6 border-l-4 border-l-sage/60 border border-sage/25 hover:border-sage/50 hover:shadow-md transition-all duration-300 group pl-5"
                 >
-                  <div className="w-10 h-10 rounded-xl bg-sage/10 flex items-center justify-center mb-4 group-hover:bg-sage/20 transition-colors">
+                  <div className="w-10 h-10 rounded-xl bg-sage/15 flex items-center justify-center mb-4 group-hover:bg-sage/25 transition-colors">
                     <area.icon size={18} className="text-sage" />
                   </div>
                   <h3 className="font-display text-lg font-semibold text-foreground mb-2 leading-snug">
@@ -229,8 +241,11 @@ export function HomePage() {
 
       {/* ── My Approach ───────────────────────────────────────────────── */}
       <section
-        className="bg-cream-dark section-padding"
-        style={{ background: "oklch(0.935 0.030 70)" }}
+        className="section-padding"
+        style={{
+          background:
+            "linear-gradient(135deg, oklch(0.945 0.028 72) 0%, oklch(0.94 0.025 110) 100%)",
+        }}
       >
         <div className="container-wide">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-14 items-center">
@@ -241,12 +256,12 @@ export function HomePage() {
               variants={stagger}
               className="space-y-6"
             >
-              <motion.h2
-                variants={fadeUp}
-                className="font-display text-4xl md:text-5xl font-bold text-foreground leading-tight"
-              >
-                Sustainable nutrition, not extreme diets.
-              </motion.h2>
+              <motion.div variants={fadeUp} className="flex items-start gap-3">
+                <div className="w-1 h-8 bg-sage rounded-full mt-2 shrink-0" />
+                <h2 className="font-display text-4xl md:text-5xl font-bold text-foreground leading-tight">
+                  Sustainable nutrition, not extreme diets.
+                </h2>
+              </motion.div>
               <motion.div
                 variants={fadeUp}
                 className="space-y-4 font-body text-base text-muted-foreground leading-relaxed"
@@ -291,7 +306,7 @@ export function HomePage() {
               className="hidden lg:flex justify-center"
             >
               <div className="relative w-full max-w-sm">
-                <div className="rounded-3xl bg-sage/12 border border-sage/25 rounded-2xl p-8 shadow-sm">
+                <div className="rounded-3xl bg-sage/15 border border-sage/35 rounded-2xl p-8 shadow-sage">
                   <div className="space-y-5">
                     {[
                       "No crash diets",
@@ -325,19 +340,19 @@ export function HomePage() {
             variants={stagger}
             className="space-y-10"
           >
-            <motion.h2
-              variants={fadeUp}
-              className="font-display text-4xl md:text-5xl font-bold text-foreground"
-            >
-              Nutrition Services
-            </motion.h2>
+            <motion.div variants={fadeUp} className="flex items-start gap-3">
+              <div className="w-1 h-8 bg-sage rounded-full mt-2 shrink-0" />
+              <h2 className="font-display text-4xl md:text-5xl font-bold text-foreground">
+                Nutrition Services
+              </h2>
+            </motion.div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               {/* Service Card 1 */}
               <motion.div
                 variants={fadeUp}
                 data-ocid="services.card.1"
-                className="rounded-2xl border border-border border-t-2 border-t-sage/60 bg-card p-8 space-y-4 flex flex-col hover:border-sage/40 hover:shadow-md transition-all duration-300"
+                className="rounded-2xl border border-sage/25 border-t-2 border-t-sage/60 bg-card p-8 space-y-4 flex flex-col hover:border-sage/50 hover:shadow-md transition-all duration-300"
               >
                 <div className="space-y-3 flex-1">
                   <span className="inline-block text-xs font-body font-semibold tracking-widest uppercase text-sage bg-sage/8 rounded-full px-3 py-1">
@@ -360,7 +375,7 @@ export function HomePage() {
                 </div>
                 <Link to="/contact">
                   <Button
-                    className="bg-primary text-primary-foreground hover:opacity-90 font-body w-full"
+                    className="bg-primary text-primary-foreground hover:bg-primary-dark transition-colors font-body w-full"
                     data-ocid="services.primary_button.1"
                   >
                     Book Consultation
@@ -372,7 +387,7 @@ export function HomePage() {
               <motion.div
                 variants={fadeUp}
                 data-ocid="services.card.2"
-                className="rounded-2xl border border-border border-t-2 border-t-sage/60 bg-card p-8 space-y-4 flex flex-col hover:border-sage/40 hover:shadow-md transition-all duration-300"
+                className="rounded-2xl border border-sage/25 border-t-2 border-t-sage/60 bg-card p-8 space-y-4 flex flex-col hover:border-sage/50 hover:shadow-md transition-all duration-300"
               >
                 <div className="space-y-3 flex-1">
                   <span className="inline-block text-xs font-body font-semibold tracking-widest uppercase text-sage bg-sage/8 rounded-full px-3 py-1">
@@ -394,7 +409,7 @@ export function HomePage() {
                 </div>
                 <Link to="/contact">
                   <Button
-                    className="bg-primary text-primary-foreground hover:opacity-90 font-body w-full"
+                    className="bg-primary text-primary-foreground hover:bg-primary-dark transition-colors font-body w-full"
                     data-ocid="services.primary_button.2"
                   >
                     Book Consultation
@@ -409,7 +424,7 @@ export function HomePage() {
       {/* ── Testimonials ──────────────────────────────────────────────── */}
       <section
         className="section-padding"
-        style={{ background: "oklch(0.96 0.012 75)" }}
+        style={{ background: "oklch(0.975 0.018 130)" }}
       >
         <div className="container-wide">
           <motion.div
@@ -419,12 +434,15 @@ export function HomePage() {
             variants={stagger}
             className="space-y-10"
           >
-            <motion.h2
+            <motion.div
               variants={fadeUp}
-              className="font-display text-4xl md:text-5xl font-bold text-foreground text-center"
+              className="flex items-start gap-3 justify-center"
             >
-              What Clients Say
-            </motion.h2>
+              <div className="w-1 h-8 bg-sage rounded-full mt-2 shrink-0" />
+              <h2 className="font-display text-4xl md:text-5xl font-bold text-foreground">
+                What Clients Say
+              </h2>
+            </motion.div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               {testimonials.map((t, i) => (
@@ -433,7 +451,7 @@ export function HomePage() {
                   key={i}
                   variants={fadeUp}
                   data-ocid={`testimonials.card.${i + 1}`}
-                  className="bg-background rounded-2xl p-7 border border-border relative flex flex-col gap-4 hover:border-sage/40 hover:shadow-md transition-all duration-300"
+                  className="bg-background rounded-2xl p-7 border border-sage/25 relative flex flex-col gap-4 hover:border-sage/50 hover:shadow-md transition-all duration-300"
                 >
                   <Quote
                     size={28}
@@ -513,7 +531,13 @@ export function HomePage() {
       ))}
 
       {/* ── Free Resources ────────────────────────────────────────────── */}
-      <section className="bg-sage section-padding">
+      <section
+        className="section-padding"
+        style={{
+          background:
+            "linear-gradient(135deg, oklch(0.46 0.092 145) 0%, oklch(0.40 0.082 148) 100%)",
+        }}
+      >
         <div className="container-wide">
           <motion.div
             initial="hidden"
@@ -568,7 +592,13 @@ export function HomePage() {
       </section>
 
       {/* ── Final CTA ─────────────────────────────────────────────────── */}
-      <section className="bg-foreground section-padding">
+      <section
+        className="section-padding"
+        style={{
+          background:
+            "linear-gradient(135deg, oklch(0.28 0.055 140) 0%, oklch(0.20 0.025 130) 100%)",
+        }}
+      >
         <div className="container-wide">
           <motion.div
             initial="hidden"
@@ -594,7 +624,7 @@ export function HomePage() {
               <Link to="/contact">
                 <Button
                   size="lg"
-                  className="bg-sage text-background hover:opacity-90 font-body font-medium px-8 shadow-sage"
+                  className="bg-sage text-background hover:bg-primary-dark transition-colors font-body font-medium px-8 shadow-sage"
                   data-ocid="cta.primary_button"
                 >
                   Book a Consultation

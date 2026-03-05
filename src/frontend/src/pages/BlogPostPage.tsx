@@ -61,7 +61,7 @@ function SectionBlock({
       )}
 
       {section.type === "highlight" && (
-        <div className="my-8 rounded-2xl bg-sage/10 border border-sage/20 px-8 py-6 text-center">
+        <div className="my-8 rounded-2xl bg-sage/15 border border-sage/30 px-8 py-6 text-center">
           <p className="font-display text-2xl font-bold text-sage">
             {section.content}
           </p>
@@ -168,7 +168,7 @@ export function BlogPostPage() {
       </section>
 
       {/* ── Divider ───────────────────────────────────────────────────────── */}
-      <div className="h-px bg-border/60" />
+      <div className="h-px bg-gradient-to-r from-transparent via-sage/35 to-transparent" />
 
       {/* ── Article body ──────────────────────────────────────────────────── */}
       <section className="bg-background section-padding">

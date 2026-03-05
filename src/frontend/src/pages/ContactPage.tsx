@@ -259,7 +259,7 @@ export function ContactPage() {
                     type="submit"
                     size="lg"
                     disabled={mutation.isPending}
-                    className="bg-primary text-primary-foreground hover:opacity-90 font-body font-medium w-full"
+                    className="bg-primary text-primary-foreground hover:bg-primary-dark transition-colors font-body font-medium w-full"
                     data-ocid="contact.submit_button"
                   >
                     {mutation.isPending ? (
@@ -290,9 +290,9 @@ export function ContactPage() {
                     href={item.href}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex items-center gap-4 p-4 rounded-xl border border-border bg-card hover:border-sage/40 hover:bg-sage/4 transition-all group"
+                    className="flex items-center gap-4 p-4 rounded-xl border border-sage/25 bg-card hover:border-sage/50 hover:bg-sage/4 transition-all group"
                   >
-                    <div className="w-10 h-10 rounded-xl bg-sage/10 flex items-center justify-center group-hover:bg-sage/20 transition-colors shrink-0">
+                    <div className="w-10 h-10 rounded-xl bg-sage/15 flex items-center justify-center group-hover:bg-sage/25 transition-colors shrink-0">
                       <item.icon size={18} className="text-sage" />
                     </div>
                     <div className="space-y-0.5">

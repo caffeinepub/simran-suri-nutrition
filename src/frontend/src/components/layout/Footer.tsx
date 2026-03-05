@@ -37,7 +37,7 @@ const currentYear = new Date().getFullYear();
 
 export function Footer() {
   return (
-    <footer className="bg-foreground text-background/90">
+    <footer className="bg-forest text-white">
       <div className="container-wide section-padding !py-14">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-10 md:gap-8">
           {/* Brand column */}
@@ -45,15 +45,15 @@ export function Footer() {
             <img
               src="/assets/uploads/Simran-Suri-Letterhead.pdf-2-1.png"
               alt="Simran Suri Nutrition logo"
-              className="h-12 w-auto object-contain mb-2 brightness-0 invert opacity-80"
+              className="h-12 w-auto object-contain mb-2 brightness-0 invert opacity-90"
             />
-            <h3 className="font-display text-xl font-semibold text-background">
+            <h3 className="font-display text-xl font-semibold text-white">
               Simran Suri
             </h3>
-            <p className="text-xs font-body tracking-wide uppercase text-background/60 font-medium">
+            <p className="text-xs font-body tracking-wide uppercase text-white/80 font-medium">
               Clinical Dietitian & Nutrition Consultant
             </p>
-            <p className="text-sm font-body italic text-background/50">
+            <p className="text-sm font-body italic text-white/70">
               Enjoy the taste of eating right.
             </p>
             {/* Social icons */}
@@ -65,7 +65,7 @@ export function Footer() {
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label={s.label}
-                  className="w-9 h-9 rounded-full border border-background/20 flex items-center justify-center text-background/70 hover:text-background hover:border-background/50 transition-colors"
+                  className="w-9 h-9 rounded-full border border-white/30 flex items-center justify-center text-white/80 hover:text-white hover:border-sage/60 transition-colors"
                 >
                   <s.icon size={15} />
                 </a>
@@ -75,7 +75,7 @@ export function Footer() {
 
           {/* Navigation column */}
           <div className="space-y-3">
-            <h4 className="font-body text-xs font-semibold tracking-widest uppercase text-background/50">
+            <h4 className="font-body text-xs font-semibold tracking-widest uppercase text-white/70">
               Navigation
             </h4>
             <nav className="flex flex-col gap-2" aria-label="Footer navigation">
@@ -84,7 +84,7 @@ export function Footer() {
                   key={link.to}
                   to={link.to}
                   data-ocid="footer.link"
-                  className="text-sm font-body text-background/70 hover:text-background transition-colors w-fit"
+                  className="text-sm font-body text-white/80 hover:text-white transition-colors w-fit"
                 >
                   {link.label}
                 </Link>
@@ -94,13 +94,13 @@ export function Footer() {
 
           {/* Contact column */}
           <div className="space-y-3">
-            <h4 className="font-body text-xs font-semibold tracking-widest uppercase text-background/50">
+            <h4 className="font-body text-xs font-semibold tracking-widest uppercase text-white/70">
               Get in Touch
             </h4>
             <div className="flex flex-col gap-3">
               <a
                 href="mailto:simransuri.dietitian@gmail.com"
-                className="flex items-start gap-2.5 text-sm font-body text-background/70 hover:text-background transition-colors w-fit group"
+                className="flex items-start gap-2.5 text-sm font-body text-white/80 hover:text-white transition-colors w-fit group"
               >
                 <Mail size={14} className="shrink-0 mt-0.5" />
                 <span className="leading-snug">
@@ -111,7 +111,7 @@ export function Footer() {
                 href="https://www.instagram.com/simransuri_73"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center gap-2.5 text-sm font-body text-background/70 hover:text-background transition-colors w-fit"
+                className="flex items-center gap-2.5 text-sm font-body text-white/80 hover:text-white transition-colors w-fit"
               >
                 <Instagram size={14} className="shrink-0" />
                 <span>@simransuri_73</span>
@@ -120,7 +120,7 @@ export function Footer() {
                 href="https://www.linkedin.com/in/simran-suri-67ba34139/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center gap-2.5 text-sm font-body text-background/70 hover:text-background transition-colors w-fit"
+                className="flex items-center gap-2.5 text-sm font-body text-white/80 hover:text-white transition-colors w-fit"
               >
                 <Linkedin size={14} className="shrink-0" />
                 <span>LinkedIn Profile</span>
@@ -129,7 +129,7 @@ export function Footer() {
                 href="https://wa.me/919311050022"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center gap-2.5 text-sm font-body text-background/70 hover:text-background transition-colors w-fit"
+                className="flex items-center gap-2.5 text-sm font-body text-white/80 hover:text-white transition-colors w-fit"
               >
                 <MessageCircle size={14} className="shrink-0" />
                 <span>+91 93110 50022</span>
@@ -139,13 +139,13 @@ export function Footer() {
         </div>
 
         {/* Divider */}
-        <div className="mt-10 pt-6 border-t border-background/10">
+        <div className="mt-10 pt-6 border-t border-white/20">
           <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-3">
-            <p className="text-xs font-body text-background/40 max-w-md leading-relaxed">
+            <p className="text-xs font-body text-white/60 max-w-md leading-relaxed">
               Nutrition guidance provided on this website is for educational
               purposes and does not replace professional medical advice.
             </p>
-            <p className="text-xs font-body text-background/30 shrink-0">
+            <p className="text-xs font-body text-white/50 shrink-0">
               © {currentYear} Simran Suri Nutrition. All rights reserved.
             </p>
           </div>

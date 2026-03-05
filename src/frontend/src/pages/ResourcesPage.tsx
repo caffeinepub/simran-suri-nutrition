@@ -83,7 +83,11 @@ export function ResourcesPage() {
 
       {/* ── Blog Articles ──────────────────────────────────────────────── */}
       <section
-        className="bg-background section-padding"
+        className="section-padding"
+        style={{
+          background:
+            "linear-gradient(180deg, oklch(0.99 0.003 90) 0%, oklch(0.975 0.016 130) 100%)",
+        }}
         data-ocid="resources.blog_section"
       >
         <div className="container-narrow">
@@ -97,7 +101,7 @@ export function ResourcesPage() {
             {/* Section heading */}
             <motion.div
               variants={fadeUp}
-              className="space-y-3 border-l-4 border-sage/50 pl-5"
+              className="space-y-3 border-l-4 border-sage pl-5"
             >
               <span className="inline-block text-xs font-body font-semibold tracking-widest uppercase text-sage">
                 From the Blog
@@ -141,7 +145,7 @@ export function ResourcesPage() {
                     params={{ slug: blogPosts[0].slug }}
                     data-ocid="resources.blog_card.button.featured"
                   >
-                    <Button className="bg-primary text-primary-foreground hover:opacity-90 font-body mt-2">
+                    <Button className="bg-primary text-primary-foreground hover:bg-primary-dark transition-colors font-body mt-2">
                       Read Article
                     </Button>
                   </Link>
@@ -232,10 +236,10 @@ export function ResourcesPage() {
                   key={resource.title}
                   variants={fadeUp}
                   data-ocid={`resources_page.card.${i + 1}`}
-                  className="rounded-2xl border border-border bg-card p-7 space-y-5 flex flex-col hover:border-sage/40 hover:shadow-md transition-all duration-300 group"
+                  className="rounded-2xl border border-sage/25 bg-card p-7 space-y-5 flex flex-col hover:border-sage/50 hover:shadow-md transition-all duration-300 group"
                 >
                   {/* Icon */}
-                  <div className="w-11 h-11 rounded-xl bg-sage/10 flex items-center justify-center group-hover:bg-sage/20 transition-colors">
+                  <div className="w-11 h-11 rounded-xl bg-sage/15 flex items-center justify-center group-hover:bg-sage/25 transition-colors">
                     <resource.icon size={20} className="text-sage" />
                   </div>
 

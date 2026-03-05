@@ -63,6 +63,9 @@ export default {
           dark: "oklch(var(--cream-dark))",
         },
         olive: "oklch(var(--olive))",
+        "primary-dark": "oklch(var(--primary-dark))",
+        forest: "oklch(var(--forest))",
+        "sage-muted": "oklch(var(--sage-muted))",
         chart: {
           1: "oklch(var(--chart-1))",
           2: "oklch(var(--chart-2))",
@@ -96,6 +99,7 @@ export default {
         lg: "0 10px 15px -3px rgba(0,0,0,0.06), 0 4px 6px -4px rgba(0,0,0,0.04)",
         sage: "0 4px 24px -4px oklch(0.48 0.085 145 / 0.18)",
         warm: "0 8px 32px -8px oklch(0.42 0.065 130 / 0.15)",
+        forest: "0 4px 24px -4px oklch(0.32 0.085 148 / 0.22)",
       },
       keyframes: {
         "accordion-down": {
