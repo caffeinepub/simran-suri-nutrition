@@ -51,7 +51,7 @@ export function Header() {
             <img
               src="/assets/uploads/Simran-Suri-Letterhead.pdf-2-1.png"
               alt="Simran Suri Nutrition logo"
-              className="h-10 md:h-12 w-auto object-contain shrink-0"
+              className="h-12 md:h-14 w-auto object-contain shrink-0"
             />
             <div className="flex flex-col gap-0.5">
               <span className="font-display text-xl font-semibold text-foreground tracking-tight">
