@@ -267,7 +267,7 @@ export const blogPosts: BlogPost[] = [
     title: "Portion Control",
     subtitle: "(Portion) Size Matters!",
     category: "Meal Planning",
-    readTime: "6 min read",
+    readTime: "5 min read",
     sections: [
       {
         type: "paragraph",
@@ -353,15 +353,6 @@ export const blogPosts: BlogPost[] = [
       },
       {
         type: "heading",
-        content: "Prepare Healthy Snacks in Advance",
-      },
-      {
-        type: "paragraph",
-        content:
-          "Better planning is the key to a better life. Always try to prepare your healthy snacks in advance because having pre-portioned healthy snacks such as the likes of nuts, fruits, yogurt, or whole-grain crackers assists you to stick to your meal plans, without succumbing to unhealthy distractions.",
-      },
-      {
-        type: "heading",
         content: "Stay Consistent",
       },
       {
@@ -373,6 +364,267 @@ export const blogPosts: BlogPost[] = [
         type: "paragraph",
         content:
           "Limiting food does not mean staying hungry, so do not confuse the two. Controlling portion sizes and increasing the frequency of meals is taking your future in your own hands and improving it tenfold. It is the journey towards the ultimate destination, Good Health!",
+      },
+    ],
+  },
+  {
+    slug: "healthy-nutrition-healthy-life",
+    title: "Healthy Nutrition, Healthy Life",
+    subtitle: "Building Sustainable Eating Habits",
+    category: "Healthy Living",
+    readTime: "7 min read",
+    sections: [
+      {
+        type: "paragraph",
+        content:
+          "As a clinical dietitian, one of the most common questions I am asked is what a truly healthy diet looks like. Many people believe that healthy eating has to be complicated or restrictive, but in reality, good nutrition is about balance, consistency, and making informed choices over time. Food plays a central role in how we feel every day. The right nutrition can improve energy levels, support immunity, strengthen the body, and contribute to overall well-being.",
+      },
+      {
+        type: "paragraph",
+        content:
+          "Through my work with individuals and families, I have seen how small and practical changes in eating habits can make a meaningful difference. Healthy nutrition is not about following extreme diets or eliminating entire food groups. Instead, it is about creating a sustainable approach to food that nourishes the body while still allowing room for enjoyment. Understanding the basics of balanced eating can help build a lifestyle that supports long term health.",
+      },
+      {
+        type: "paragraph",
+        content:
+          "Here are some key principles that can guide healthier nutrition habits in everyday life.",
+      },
+      {
+        type: "heading",
+        content: "Balanced Meals",
+      },
+      {
+        type: "paragraph",
+        content:
+          "A healthy diet begins with balance. This means including a variety of foods from different food groups in your daily meals. Fruits, vegetables, whole grains, lean proteins, and healthy fats all provide different nutrients that the body needs to function properly.",
+      },
+      {
+        type: "paragraph",
+        content:
+          "A simple way to structure a balanced meal is by filling half your plate with colourful fruits and vegetables. These foods are rich in vitamins, minerals, and dietary fibre, which support digestion and overall health. The remaining portion of the plate can be divided between whole grains and protein sources such as lentils, eggs, fish, or lean meats.",
+      },
+      {
+        type: "heading",
+        content: "Portion Control",
+      },
+      {
+        type: "paragraph",
+        content:
+          "Even healthy foods can lead to overeating when portion sizes are not monitored. Being mindful of portions can help maintain a balanced intake without feeling restricted.",
+      },
+      {
+        type: "paragraph",
+        content:
+          "Small habits can make a difference. Using smaller plates or bowls can naturally reduce the amount of food consumed. It is also important to listen to your body's hunger and fullness signals. Eating slowly and recognising when you are satisfied can prevent unnecessary snacking and overeating.",
+      },
+      {
+        type: "heading",
+        content: "Hydration",
+      },
+      {
+        type: "paragraph",
+        content:
+          "Hydration plays a vital role in maintaining overall health. Water supports digestion, regulates body temperature, and helps transport nutrients throughout the body.",
+      },
+      {
+        type: "paragraph",
+        content:
+          "Aim to drink water consistently throughout the day rather than waiting until you feel very thirsty. At the same time, try to limit sugary beverages such as sodas or packaged fruit juices. These drinks often add extra calories without providing significant nutritional benefits.",
+      },
+      {
+        type: "heading",
+        content: "Limiting Processed Foods",
+      },
+      {
+        type: "paragraph",
+        content:
+          "Highly processed foods such as fast food, sugary snacks, and packaged convenience meals are often high in added sugars, unhealthy fats, and sodium. Regular consumption of these foods can increase the risk of various health issues over time.",
+      },
+      {
+        type: "paragraph",
+        content:
+          "Reducing processed foods and choosing more whole, minimally processed options can make a significant difference in improving overall diet quality.",
+      },
+      {
+        type: "heading",
+        content: "Nutrient Dense Choices",
+      },
+      {
+        type: "paragraph",
+        content:
+          "Nutrient dense foods provide a high amount of vitamins, minerals, and beneficial compounds relative to their calorie content. Including these foods regularly helps ensure that the body receives the essential nutrients it needs.",
+      },
+      {
+        type: "paragraph",
+        content:
+          "Examples of nutrient rich foods include leafy green vegetables, berries, nuts, seeds, fish, and whole grains. These foods support immunity, heart health, and long term wellness.",
+      },
+      {
+        type: "heading",
+        content: "Mindful Eating",
+      },
+      {
+        type: "paragraph",
+        content:
+          "Mindful eating involves paying attention to the experience of eating rather than rushing through meals. Slowing down allows you to enjoy the taste, texture, and aroma of your food while also helping you recognise when you are comfortably full.",
+      },
+      {
+        type: "paragraph",
+        content:
+          "Try to minimise distractions such as phones, televisions, or laptops during meals. This can prevent mindless eating and help create a healthier relationship with food.",
+      },
+      {
+        type: "heading",
+        content: "Healthy Cooking Methods",
+      },
+      {
+        type: "paragraph",
+        content:
+          "The way food is prepared can influence its nutritional value. Cooking methods such as baking, grilling, steaming, or sautéing help retain nutrients while reducing the need for excessive added fats.",
+      },
+      {
+        type: "paragraph",
+        content:
+          "Deep frying, on the other hand, can increase calorie and unhealthy fat intake. Choosing lighter cooking techniques can make everyday meals both healthier and more balanced.",
+      },
+      {
+        type: "heading",
+        content: "Limiting Added Sugars and Salt",
+      },
+      {
+        type: "paragraph",
+        content:
+          "Many packaged foods contain hidden sources of added sugars and sodium. Consuming high amounts of these ingredients can contribute to health concerns such as high blood pressure and weight gain.",
+      },
+      {
+        type: "paragraph",
+        content:
+          "Reading nutrition labels and choosing low sodium or reduced sugar options can help maintain a healthier balance.",
+      },
+      {
+        type: "heading",
+        content: "Regular Physical Activity",
+      },
+      {
+        type: "paragraph",
+        content:
+          "While diet is important, a healthy lifestyle also includes regular physical activity. Movement supports metabolism, strengthens the body, and contributes to overall well being.",
+      },
+      {
+        type: "paragraph",
+        content:
+          "Activities such as walking, swimming, cycling, or playing sports can help maintain consistency while making exercise enjoyable.",
+      },
+      {
+        type: "heading",
+        content: "The Bottom Line",
+      },
+      {
+        type: "paragraph",
+        content:
+          "Improving your diet does not require drastic or immediate changes. In fact, trying to completely overhaul your eating habits all at once can feel overwhelming and difficult to sustain.",
+      },
+      {
+        type: "paragraph",
+        content:
+          "Instead, focus on incorporating small changes gradually. This could mean adding more vegetables to your meals, drinking more water during the day, or choosing whole foods more often. Over time, these small steps can build healthier habits that support long term well being.",
+      },
+      {
+        type: "paragraph",
+        content:
+          "A balanced and mindful approach to nutrition is not about perfection. It is about creating sustainable habits that allow your body to feel nourished, energised, and supported every day.",
+      },
+    ],
+  },
+  {
+    slug: "taste-the-rainbow",
+    title: "Taste the Rainbow",
+    subtitle: "A Spectrum on the Plate",
+    category: "Nutrition Basics",
+    readTime: "6 min read",
+    sections: [
+      {
+        type: "paragraph",
+        content:
+          "Who said mindful eating has to be boring? All you need is a splash of colours on your plate!",
+      },
+      {
+        type: "paragraph",
+        content:
+          "Health experts often recommend eating at least five small portions of fruits and vegetables every day and the more colours you include, the better it is for your body. The fact that colours are visually appealing is an added bonus, but more importantly, it ensures that your body receives a variety of phytonutrients (natural plant compounds) that are beneficial for your health.",
+      },
+      {
+        type: "paragraph",
+        content:
+          "Each colour comes with its own set of unique vitamins, minerals, antioxidants that aid in protecting the body from diseases, building immunity, and improving overall well-being. The foods you consume are directly linked to your digestive health. A diverse meal plan helps support a strong gut microbiome, which improves digestion, metabolism, and immune function.",
+      },
+      {
+        type: "paragraph",
+        content:
+          "No single vegetable can be held responsible for giving your body all the nutrients, it requires a team of colours to cross train your internal systems. 'Eat the Rainbow' is a nutritional philosophy and a science-backed approach to ensure a shift in eating patterns. Let's introduce you to the recommended colours on your plate.",
+      },
+      {
+        type: "heading",
+        content: "GREEN — [spinach, beans, cabbage, lettuce, etc.]",
+      },
+      {
+        type: "paragraph",
+        content:
+          "Since childhood, everyone has been told that eating your greens should be prioritised. But have you ever wondered why? Greens are our body's cleansers and detoxifiers! They are packed with chlorophyll, iron, folate and magnesium, all of which are essential for everyday functioning. Besides detoxification of the body, they support bone density, brain function and blood health. Folate is imperative for cell repair and DNA synthesis.",
+      },
+      {
+        type: "heading",
+        content: "ORANGE — [carrots, pumpkins, oranges, etc.]",
+      },
+      {
+        type: "paragraph",
+        content:
+          "These fruits and vegetables contain high amounts of beta-carotene, which the body converts into vitamin A. They are your Vision Protectors as they maintain your vision health, especially night vision. But this is not it, as they also form a strong immune barrier and look after the well-being of your largest sensory organ, the skin.",
+      },
+      {
+        type: "heading",
+        content: "YELLOW — [sweetcorn, yellow peppers, etc.]",
+      },
+      {
+        type: "paragraph",
+        content:
+          "Yellow, Yellow, A Hearty Fellow! The yellow colour in veggies supports your heart as well as gut health. Rich in flavonoids, vitamin C and potassium, yellow is truly a happy colour. Potassium helps regulate blood pressure and supports heart health, while vitamin C acts as the immunity booster for your body.",
+      },
+      {
+        type: "heading",
+        content: "RED — [beetroot, tomatoes, pomegranates, etc.]",
+      },
+      {
+        type: "paragraph",
+        content:
+          "Red is a vital colour when it comes to health, whether it is blood in the body or the colour in fruits and vegetables. Red-coloured food is the cellular guard of your body. Red foods contain powerful compounds such as lycopene and anthocyanins. Lycopene happens to be a powerful antioxidant that is associated with heart health and the prevention of skin damage caused by UV rays. Some studies have also suggested that it has cancer-fighting properties, making them a true game changer!",
+      },
+      {
+        type: "heading",
+        content: "PURPLE — [eggplant (brinjal), purple cabbage, etc.]",
+      },
+      {
+        type: "paragraph",
+        content:
+          "Purple pigment is an excellent brain booster. It is rich in anthocyanins, which act as powerful antioxidants. This colour boasts of anti-inflammatory properties and has the potential to slow down signs of aging. But more importantly, it looks after brain health, supporting both memory and cognitive function.",
+      },
+      {
+        type: "heading",
+        content: "WHITE — [cauliflower, radish, garlic, etc.]",
+      },
+      {
+        type: "paragraph",
+        content:
+          "Last but certainly not the least, let's introduce you to the benefits of a more subtle colour, white. White foods contain allicin, and possess strong anti-inflammatory as well as immune-boosting properties. It also offers antibacterial benefits to the body.",
+      },
+      {
+        type: "paragraph",
+        content:
+          "Not every colour needs to be consumed in one meal or even in every meal. The goal is to 'hit the rainbow' over the course of an entire day or even, a full week is acceptable. Prioritise variety over repetition, as more colours will bring more nutrients to the table.",
+      },
+      {
+        type: "paragraph",
+        content: "Colours are the New Black!",
       },
     ],
   },

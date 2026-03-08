@@ -535,7 +535,7 @@ export function HomePage() {
         className="section-padding"
         style={{
           background:
-            "linear-gradient(135deg, oklch(0.46 0.092 145) 0%, oklch(0.40 0.082 148) 100%)",
+            "linear-gradient(135deg, oklch(0.88 0.042 133) 0%, oklch(0.82 0.058 140) 100%)",
         }}
       >
         <div className="container-wide">
@@ -547,19 +547,19 @@ export function HomePage() {
             className="max-w-2xl space-y-6"
           >
             <motion.div variants={fadeUp} className="space-y-1">
-              <span className="inline-block text-xs font-body font-semibold tracking-widest uppercase text-background/70 border border-background/20 rounded-full px-3 py-1">
+              <span className="inline-block text-xs font-body font-semibold tracking-widest uppercase text-foreground/60 border border-foreground/20 rounded-full px-3 py-1">
                 Free Resources
               </span>
             </motion.div>
             <motion.h2
               variants={fadeUp}
-              className="font-display text-4xl md:text-5xl font-bold text-background leading-tight"
+              className="font-display text-4xl md:text-5xl font-bold text-foreground leading-tight"
             >
               Free Nutrition Resources
             </motion.h2>
             <motion.p
               variants={fadeUp}
-              className="font-body text-lg text-background/80 leading-relaxed"
+              className="font-body text-lg text-foreground/70 leading-relaxed"
             >
               Simple tools and educational resources designed to help you build
               balanced eating habits and understand the fundamentals of healthy
@@ -570,7 +570,7 @@ export function HomePage() {
               <Link to="/resources">
                 <Button
                   size="lg"
-                  className="bg-background text-foreground hover:bg-background/90 font-body font-medium gap-2"
+                  className="bg-primary text-primary-foreground hover:bg-primary-dark transition-colors font-body font-medium gap-2 shadow-sage"
                   data-ocid="resources.primary_button"
                 >
                   <BookOpen size={16} />
@@ -580,7 +580,7 @@ export function HomePage() {
               <Button
                 size="lg"
                 variant="outline"
-                className="border-background/40 text-background hover:bg-background/10 font-body font-medium gap-2"
+                className="border-foreground/30 text-foreground hover:bg-foreground/8 font-body font-medium gap-2"
                 data-ocid="resources.secondary_button"
               >
                 <Download size={16} />
@@ -596,7 +596,7 @@ export function HomePage() {
         className="section-padding"
         style={{
           background:
-            "linear-gradient(135deg, oklch(0.28 0.055 140) 0%, oklch(0.20 0.025 130) 100%)",
+            "linear-gradient(135deg, oklch(0.44 0.085 145) 0%, oklch(0.40 0.078 148) 100%)",
         }}
       >
         <div className="container-wide">
@@ -615,7 +615,7 @@ export function HomePage() {
             </motion.h2>
             <motion.p
               variants={fadeUp}
-              className="font-body text-lg text-background/70 leading-relaxed"
+              className="font-body text-lg text-background/80 leading-relaxed"
             >
               Book a consultation to receive personalised nutrition guidance
               designed to support your health goals and lifestyle.
@@ -624,7 +624,7 @@ export function HomePage() {
               <Link to="/contact">
                 <Button
                   size="lg"
-                  className="bg-sage text-background hover:bg-primary-dark transition-colors font-body font-medium px-8 shadow-sage"
+                  className="bg-background text-foreground hover:bg-background/90 transition-colors font-body font-medium px-8 shadow-sage"
                   data-ocid="cta.primary_button"
                 >
                   Book a Consultation

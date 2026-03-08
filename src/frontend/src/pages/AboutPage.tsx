@@ -1,4 +1,10 @@
-import { CheckCircle2 } from "lucide-react";
+import {
+  BookOpen,
+  CheckCircle2,
+  GraduationCap,
+  Stethoscope,
+  Users,
+} from "lucide-react";
 import { motion } from "motion/react";
 
 const fadeUp = {
@@ -17,6 +23,32 @@ const focusAreas = [
   "Thyroid health",
   "Lifestyle and energy optimisation",
   "Sustainable weight management",
+];
+
+const credentials = [
+  {
+    icon: GraduationCap,
+    label: "Education",
+    lines: [
+      "BSc Home Science, Lady Irwin College, Delhi University",
+      "MSc Food & Nutrition, Delhi University",
+    ],
+  },
+  {
+    icon: Stethoscope,
+    label: "Clinical Experience",
+    lines: ["Indraprastha Apollo Hospital", "Metro Hospitals"],
+  },
+  {
+    icon: BookOpen,
+    label: "Foundation",
+    lines: ["Internship at AIIMS", "Medical Nutrition Therapy"],
+  },
+  {
+    icon: Users,
+    label: "Current Practice",
+    lines: ["Nutrition Consultant", "Freelance Dietitian"],
+  },
 ];
 
 export function AboutPage() {
@@ -54,12 +86,14 @@ export function AboutPage() {
               variants={stagger}
               className="space-y-6 pt-4"
             >
-              <motion.span
-                variants={fadeUp}
-                className="inline-block text-xs font-body font-semibold tracking-widest uppercase text-sage border border-sage/30 bg-sage/8 rounded-full px-3 py-1"
-              >
-                Clinical Dietitian & Nutrition Consultant
-              </motion.span>
+              <motion.div variants={fadeUp} className="flex flex-wrap gap-2">
+                <span className="inline-block text-xs font-body font-semibold tracking-widest uppercase text-sage border border-sage/30 bg-sage/8 rounded-full px-3 py-1">
+                  Clinical Dietitian & Nutrition Consultant
+                </span>
+                <span className="inline-block text-xs font-body font-semibold tracking-wide text-warm-brown border border-warm-brown/30 bg-warm-brown/8 rounded-full px-3 py-1">
+                  20+ Years of Experience
+                </span>
+              </motion.div>
 
               <motion.h1
                 variants={fadeUp}
@@ -74,15 +108,61 @@ export function AboutPage() {
               >
                 <p>
                   Simran Suri is a Clinical Dietitian and Nutrition Consultant
-                  focused on helping individuals build sustainable, balanced
-                  relationships with food.
+                  with over 20 years of experience in dietetics and nutrition.
+                  She holds a BSc in Home Science from Lady Irwin College, Delhi
+                  University, and an MSc in Food and Nutrition from Delhi
+                  University, building a strong academic foundation in clinical
+                  nutrition.
                 </p>
                 <p>
-                  Her approach emphasises practical nutrition strategies that
-                  support everyday health while respecting individual
-                  lifestyles, cultural food preferences, and long-term
-                  wellbeing.
+                  Her professional journey began with an internship at AIIMS,
+                  where she developed a solid grounding in medical nutrition
+                  therapy. She went on to work with leading healthcare
+                  institutions, including Indraprastha Apollo Hospital and Metro
+                  Hospitals, gaining extensive clinical experience in
+                  therapeutic nutrition and patient care.
                 </p>
+                <p>
+                  Today, Simran works as a nutrition consultant and freelance
+                  dietitian, helping individuals adopt balanced, practical, and
+                  sustainable nutrition practices tailored to their unique
+                  lifestyle and health goals. Her approach combines
+                  evidence-informed guidance with a deep respect for individual
+                  food preferences, cultural habits, and long-term wellbeing —
+                  making nutrition feel achievable and meaningful for every
+                  client.
+                </p>
+              </motion.div>
+
+              {/* Credentials Grid */}
+              <motion.div
+                variants={stagger}
+                className="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2"
+              >
+                {credentials.map((cred) => (
+                  <motion.div
+                    key={cred.label}
+                    variants={fadeUp}
+                    className="rounded-xl border border-sage/25 bg-card p-5 flex gap-4 items-start hover:border-sage/50 hover:shadow-sm transition-all duration-300 group"
+                  >
+                    <div className="w-10 h-10 rounded-xl bg-sage/15 flex items-center justify-center shrink-0 group-hover:bg-sage/25 transition-colors">
+                      <cred.icon size={18} className="text-sage" />
+                    </div>
+                    <div className="space-y-1">
+                      <p className="font-body text-xs font-semibold uppercase tracking-widest text-sage">
+                        {cred.label}
+                      </p>
+                      {cred.lines.map((line) => (
+                        <p
+                          key={line}
+                          className="font-body text-sm text-foreground/75 leading-snug"
+                        >
+                          {line}
+                        </p>
+                      ))}
+                    </div>
+                  </motion.div>
+                ))}
               </motion.div>
             </motion.div>
           </div>
