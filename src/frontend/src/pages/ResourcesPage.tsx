@@ -20,6 +20,7 @@ const resources = [
     title: "Balanced Plate Method for Indian Meals",
     desc: "A practical guide to structuring balanced, nutritious meals using familiar Indian ingredients and everyday cooking styles.",
     buttonLabel: "Download Guide",
+    pdfUrl: "/assets/Balanced Diet.pdf",
   },
   {
     icon: BarChart2,
@@ -27,6 +28,7 @@ const resources = [
     title: "Weekly Nutrition Habit Tracker",
     desc: "A simple checklist to help track daily nutrition habits and progress towards your wellbeing goals over time.",
     buttonLabel: "Download Tracker",
+    pdfUrl: "/assets/Weekly_Nutrition_Check_In_Updated.pdf",
   },
 ];
 
@@ -248,14 +250,21 @@ export function ResourcesPage() {
                     </p>
                   </div>
 
-                  <Button
-                    variant="outline"
-                    className="border-sage text-sage hover:bg-sage/8 font-body gap-2 w-full"
+                  <a
+                    href={resource.pdfUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    download
                     data-ocid={`resources_page.button.${i + 1}`}
                   >
-                    <Download size={14} />
-                    {resource.buttonLabel}
-                  </Button>
+                    <Button
+                      variant="outline"
+                      className="border-sage text-sage hover:bg-sage/8 font-body gap-2 w-full"
+                    >
+                      <Download size={14} />
+                      {resource.buttonLabel}
+                    </Button>
+                  </a>
                 </motion.div>
               ))}
             </div>
