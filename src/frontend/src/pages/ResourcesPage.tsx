@@ -28,13 +28,6 @@ const resources = [
     desc: "A simple checklist to help track daily nutrition habits and progress towards your wellbeing goals over time.",
     buttonLabel: "Download Tracker",
   },
-  {
-    icon: FileText,
-    tag: "PDF Guide",
-    title: "Understanding Blood Sugar & Food",
-    desc: "An introductory guide to how food choices affect blood sugar and energy levels, with practical advice for everyday meals.",
-    buttonLabel: "Download Guide",
-  },
 ];
 
 export function ResourcesPage() {
@@ -230,7 +223,7 @@ export function ResourcesPage() {
               </p>
             </motion.div>
 
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               {resources.map((resource, i) => (
                 <motion.div
                   key={resource.title}
