@@ -628,4 +628,140 @@ export const blogPosts: BlogPost[] = [
       },
     ],
   },
+  {
+    slug: "fiber-ating-your-body",
+    title: "Fiber-ating Your Body",
+    subtitle: "The Unsung Hero of Your Diet",
+    category: "Nutrition Science",
+    readTime: "6 min read",
+    sections: [
+      {
+        type: "paragraph",
+        content:
+          "Did you know Fiber is not digested by your body? In fact, it makes its way to your gut, where it feeds bacteria that, in turn, support digestion and immunity.",
+      },
+      {
+        type: "paragraph",
+        content:
+          "Everyone knows that the body requires fiber, but the details about it are often overlooked. I am here to change that! Nothing is worse than having half-knowledge about a subject as important as health and diet, so without further ado, let's dive into this aspect of nutrition.",
+      },
+      {
+        type: "paragraph",
+        content:
+          "Dietary Fiber belongs to the family of carbohydrates, which includes parts of plant foods that are difficult for the body to digest. Fiber passes out of the body through the stomach, small intestine, and colon without being absorbed. There are two types of fibers that are consumed, Soluble and Insoluble Fiber.",
+      },
+      {
+        type: "heading",
+        content: "Soluble Fiber",
+      },
+      {
+        type: "paragraph",
+        content:
+          "As the name suggests, Soluble Fiber dissolves in water and forms a gel-like material in the stomach that delays the process of digestion. Found in foods such as oats, peas, beans, apples, bananas, avocados, citrus fruits, carrots, barley, and psyllium, Soluble Fiber aids in reducing cholesterol and blood sugar levels in the body.",
+      },
+      {
+        type: "heading",
+        content: "Insoluble Fiber",
+      },
+      {
+        type: "paragraph",
+        content:
+          "To no one's surprise, Insoluble Fiber does not dissolve in water. It supports the movement of material through the digestive system and adds bulk to the stool. Whole-wheat flour, wheat bran, nuts, cauliflower, green beans, and potatoes are trusted sources of Insoluble Fiber. It is beneficial for people with constipation problems and for those who struggle to pass stools regularly.",
+      },
+      {
+        type: "paragraph",
+        content:
+          "Now, if you remember the first piece of information in this blog, you would understand that like any other organism, bacteria needs to eat to survive and function. Most carbohydrates, proteins, and fats are absorbed into the bloodstream before they reach the large intestine. Unfortunately, that means these nutrients are unable to make their way to the gut flora. This is where Fiber slides in and becomes the hero. Human cells do not possess the enzymes to digest many of these fibers, but intestinal bacteria does. Some dietary fibers are essential for health because they feed the \"good\" bacteria in the intestine, functioning as prebiotics. Under these circumstances, the 'good' gut bacteria grows and thrives, which can result in various positive effects on your health.",
+      },
+      {
+        type: "paragraph",
+        content:
+          "Let's take a look at the benefits offered by a high-fiber diet.",
+      },
+      {
+        type: "heading",
+        content: "High Fiber prevents Constipation",
+      },
+      {
+        type: "paragraph",
+        content:
+          "Dietary Fiber increases the weight and size of the stool, which helps soften it. Bulky stools are easier to pass which reduces the chance of constipation. Loose motions is a very common digestive problem. The answer to loose, watery stools is also fiber intake, as they can help solidify the stool.",
+      },
+      {
+        type: "heading",
+        content: "High Fiber lowers Cholesterol Levels",
+      },
+      {
+        type: "paragraph",
+        content:
+          "Soluble Fiber found in beans, oats, flaxseed and oat bran may prevent the body from absorbing some of the cholesterol in other foods. This may lower the low-density lipoproteins in the blood, which is more commonly known as 'bad' cholesterol levels.",
+      },
+      {
+        type: "heading",
+        content: "Fiber tackles Blood Sugar Levels",
+      },
+      {
+        type: "paragraph",
+        content:
+          "Fiber, especially soluble fiber, may slow down the absorption of sugar and help improve blood sugar levels, which is most helpful for a person with diabetes. The risk of developing Type 2 diabetes can also be avoided by consuming a healthy diet that is rich in both, soluble and insoluble fibers.",
+      },
+      {
+        type: "heading",
+        content: "Healthy Weight and Fiber",
+      },
+      {
+        type: "paragraph",
+        content:
+          "High-fiber foods are generally more filling than low-fiber foods and hence, you are likely to eat less while staying satisfied for longer periods of time. This reduces the urge for unnecessary snacking and helps maintain a healthy weight. Moreover, high-fiber food takes longer to eat and has lesser energy density as compared to low-fiber foods.",
+      },
+      {
+        type: "heading",
+        content: "Your picks for a high and healthy fiber diet should be:",
+      },
+      {
+        type: "list",
+        items: [
+          "Whole grains (such as barley, bulgur, brown rice and whole-wheat bread or pasta)",
+          "Fruits",
+          "Vegetables",
+          "Beans, peas and other legumes",
+          "Nuts and Seeds",
+        ],
+      },
+      {
+        type: "paragraph",
+        content:
+          "Refined or processed foods are lower in fiber. The grain-refining process eliminates the outer layer from the grain, called bran and this reduces the fiber content of the grain.",
+      },
+      {
+        type: "highlight",
+        content:
+          "According to the ICMR, an average adult requires around 40 grams of dietary fiber per day on a 2000-calorie diet.",
+      },
+      {
+        type: "paragraph",
+        content:
+          "Like everything, a high-fiber diet also has its own pros and cons. It can result in gastrointestinal problems, such as irritable bowel syndrome, Crohn's disease, and ulcerative colitis in some people. Patients who have gone through bowel surgery recently are advised against a high-fiber diet.",
+      },
+      {
+        type: "paragraph",
+        content:
+          "Suddenly consuming large amounts of high-fiber foods can also disturb the stomach causing gastrointestinal discomfort such as gas and bloating. Taking in too much fiber too quickly can lead to constipation, as stool bulks up and finds it difficult to pass. This is why a gradual increase in Fiber intake is recommended.",
+      },
+      {
+        type: "paragraph",
+        content:
+          "Understanding what you eat is just as important as eating itself. Anything too less or too much is bad, so go for a high fiber diet but do not push its limit.",
+      },
+      {
+        type: "paragraph",
+        content:
+          "Consult a clinical dietitian to figure out what your body requires, and give it 'exactly' that.",
+      },
+      {
+        type: "paragraph",
+        content: "Eat better, eat responsibly, eat smart!",
+      },
+    ],
+  },
 ];
